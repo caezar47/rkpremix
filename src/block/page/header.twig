@@ -1,0 +1,12 @@
+<header class="{{ prefix }} swiper-slide" data-label="Главная" data-theme="light">
+  <picture class="{{ prefix }}__image  image">
+    <source type="image/webp" src="{{ path.img }}/{{ img }}.webp">
+    <img src="{{ path.img }}/{{ img }}.jpg" alt="">
+  </picture>
+  <div class="{{ prefix }}__container  container">
+    <h1 class="{{ prefix }}__title">{{ title }}</h1>
+    <p class="{{ prefix }}__text">{{ text }}</p>
+    <button class="{{ prefix }}__button  button js-swiper-btn" type="button" data-slideto="5">Вы можете связаться с нами</button>
+    <button class="{{ prefix }}__scroll js-swiper-btn" type="button" data-slideto="1"></button>
+  </div>
+</header>

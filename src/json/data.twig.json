@@ -1,0 +1,35 @@
+{
+	"status": {
+		"name":"prod",
+		"name":"dev",
+		"rev":"dev"
+	},
+	"page":{
+		"index":"./",
+		"MC_384":"./MC-384-bonus-info.html",
+		"HANSGROHE_1405":"./HANSGROHE-1405.html"
+	},
+	"css":{
+		"style":"style.css"
+	},
+	"js":{
+		"slider":"slider.js",
+		"HANSGROHE_1405":"HANSGROHE-1405.js"
+	},
+	"img":{
+		"MC_384":"/promo/MC/MC-384",
+		"HANSGROHE_1405":"/promo/HG/HANSGROHE-1405",
+		"HANSGROHE_1405":""
+	},
+	"prefix":{
+		"header":"header"
+	},
+	"path":{		                  
+		"css":"./css",
+		"img":"./img",
+		"js":"./js",
+		"favicon":"./favicon",
+		"fonts":"./favicon",
+		"docs":"./docs"
+	}
+}

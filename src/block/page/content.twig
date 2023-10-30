@@ -1,0 +1,49 @@
+<section class="{{ prefix }}  swiper-slide" data-label="{{ title }}" data-theme="{{ theme }}">
+  <div class="{{ prefix }}__container  container">
+
+    {% if step %}
+      <div class="{{ prefix }}__step  step">{{ step }}</div>
+    {% endif %}
+
+    {% if title %}
+      <h2 class="{{ prefix }}__title  title">{{ title }}</h2>
+    {% endif %}
+
+    {% if text %}
+    <div class="{{ prefix }}__text">{{ text }}</div>
+    {% endif %}
+
+    {% if btn %}
+      <button class="{{ prefix }}__button  button js-swiper-btn" type="button" data-slideto="{{ btn_slideto }}"> {{ btn }}</button>
+    {% endif %}
+
+  </div>
+
+  {% if img  %}
+    <picture class="{{ prefix }}__image image">
+      <source type="image/webp" src="{{ path.img }}/{{ img }}.webp">
+      <img src="{{ path.img }}/{{ img }}.{{ img_type }}" alt="{{ title }}">
+    </picture>
+  {% endif %}
+
+  {% if before %}
+  <div class="{{ prefix }}__before before">
+  </div>
+  {% endif %}
+
+  {% if footer  %}
+    <footer class="footer">
+      <div class="footer__container  container">
+        <button class="footer__button  js-swiper-btn" type="button" data-slideto="0"></button>
+        <div class="footer__info">
+          <p>ООО «РК-Премикс» входит в&nbsp;группу&nbsp;компаний&nbsp;ООО&nbsp;«РегионКорма».</p>
+          <p>Телефон центрального офиса <a href="tel:+74862443226">+7&nbsp;(4862)&nbsp;44&#8209;32&#8209;26</a>.</p>
+        </div>
+        <div class="footer__site">
+          <a href="https://rkorma.ru/" target="_blank">rkorma.ru</a>
+        </div>
+      </div>
+    </footer>
+
+  {% endif %}
+</section>
