@@ -1,0 +1,111 @@
+@media (min-width: 1025px) {
+  .navbar-default .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.2vw;
+  }
+  .navbar-default .navbar-nav::before {
+    display: none;
+  }
+}
+body.page-template-rkpremix {
+  padding: 0;
+}
+body.page-template-rkpremix .navbar {
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  inset: 0 0 auto;
+}
+.rkpremix {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 630px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+.rkpremix::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 1025px) {
+  .rkpremix {
+    padding: calc(115px + 10vh) 10vw 3vh;
+  }
+  .rkpremix::after {
+    display: none;
+  }
+}
+.rkpremix__image {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+.rkpremix__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rkpremix__desc {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 33px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.rkpremix__title {
+  color: #1C953F;
+  font-family: pfagoraslabpro-black-webfont;
+  font-size: clamp(31px, 9vw, 44px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.rkpremix__note {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.333;
+  font-family: pfdindisplaypro-med-webfont;
+  max-width: 650px;
+  margin-bottom: 7px;
+}
+.rkpremix__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  background: #1C953F;
+  color: #fff;
+  font-size: clamp(18px, 1vw, 20px);
+  line-height: 1;
+  font-family: pfdindisplaypro-bold-webfont;
+  padding: 18px 25px;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.rkpremix__btn:focus,
+.rkpremix__btn:hover {
+  color: #1C953F;
+  background-color: #cfc;
+  text-decoration: none;
+}
